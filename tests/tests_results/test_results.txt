@@ -1,0 +1,68 @@
+(venv) D:\Beno\frontend_backend_testing>pytest
+================================================================================== test session starts ===================================================================================
+platform win32 -- Python 3.9.1, pytest-7.0.1, pluggy-1.0.0 -- D:\Beno\frontend_backend_testing\venv\Scripts\python.exe
+cachedir: .pytest_cache
+rootdir: D:\Beno\frontend_backend_testing, configfile: pytest.ini
+collected 5 items
+
+tests/back_end/test_back_end.py::test_get_title
+------------------------------------------------------------------------------------- live log call --------------------------------------------------------------------------------------
+2022-02-12 15:12:02 INFO Expected title: qui est esse
+2022-02-12 15:12:02 INFO Message with expected title:
+[
+    {
+        "body": "est rerum tempore vitae\nsequi sint nihil reprehenderit dolor beatae ea dolores neque\nfugiat blanditiis voluptate porro vel nihil molestiae ut reiciendis\nqui aperiam no
+n debitis possimus qui neque nisi nulla",
+        "id": 2,
+        "title": "qui est esse",
+        "userId": 1
+    }
+]
+PASSED                                                                                                                                                                              [ 20%]
+tests/back_end/test_back_end.py::test_create_user
+------------------------------------------------------------------------------------- live log call --------------------------------------------------------------------------------------
+2022-02-12 15:12:02 INFO User data
+{
+    "email": "banadu@march.biz",
+    "name": "Kakadu",
+    "username": "Banadu"
+}
+2022-02-12 15:12:02 INFO Added user post request results:
+{
+    "email": "banadu@march.biz",
+    "id": 11,
+    "name": "Kakadu",
+    "username": "Banadu"
+}
+PASSED                                                                                                                                                                              [ 40%]
+tests/back_end/test_back_end.py::test_response_time
+------------------------------------------------------------------------------------- live log call --------------------------------------------------------------------------------------
+2022-02-12 15:12:03 INFO Expected response time sec 2
+2022-02-12 15:12:03 INFO Get request response time sec 0.091414
+PASSED                                                                                                                                                                              [ 60%]
+tests/front_end/test_front_end.py::test_alert_your_name
+------------------------------------------------------------------------------------- live log call --------------------------------------------------------------------------------------
+2022-02-12 15:12:04 INFO Go to the website: https://www.way2automation.com/way2auto_jquery/automation-practice-site.html
+2022-02-12 15:12:07 INFO Click on the Alert box from the “Alert” category located on the bottom of the page
+2022-02-12 15:12:08 INFO Navigate to the INPUT ALERT section
+2022-02-12 15:12:09 INFO Switching to iframe with src=alert/input-alert.html
+2022-02-12 15:12:09 INFO Click on the button labeled as “Click the button to demonstrate the Input box.”
+2022-02-12 15:12:10 INFO Enter your name in the alert popup
+2022-02-12 15:12:10 INFO Validate the shown message contains your input data (your name) from the previous step
+2022-02-12 15:12:10 INFO My name: BEN
+2022-02-12 15:12:10 INFO Text element info: Hello BEN! How are you today?
+PASSED                                                                                                                                                                              [ 80%]
+tests/front_end/test_front_end.py::test_format_date_isoformat
+------------------------------------------------------------------------------------- live log call --------------------------------------------------------------------------------------
+2022-02-12 15:12:14 INFO Go to the website: https://www.way2automation.com/way2auto_jquery/automation-practice-site.html
+2022-02-12 15:12:17 INFO Open the Date picker widget
+2022-02-12 15:12:17 INFO Navigate to the FORMAT DATE section
+2022-02-12 15:12:22 INFO Switching to iframe with src=datepicker/defult4.html
+2022-02-12 15:12:22 INFO Select today's date
+2022-02-12 15:12:23 INFO Select the ISO 8601 Format option
+2022-02-12 15:12:23 INFO Get current day iso format from your pc
+2022-02-12 15:12:23 INFO Today's day from pc  2022-02-12
+2022-02-12 15:12:23 INFO Today's day from the website 2022-02-12
+PASSED                                                                                                                                                                              [100%]
+
+=================================================================================== 5 passed in 23.92s ===================================================================================
